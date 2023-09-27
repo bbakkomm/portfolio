@@ -117,4 +117,43 @@ window.addEventListener('load', () => {
       }
     });
   }
+
+  if (document.querySelectorAll('.mobilemenu-btn').length > 0) {
+    let mobileBtn = document.querySelector('.mobilemenu-btn');
+    let mobileNav = document.querySelector('.mobile-nav');
+    let eleHtml = document.querySelector('html');
+    let mobileflexwrap = document.querySelector('.mobile-flexwrap');
+
+    mobileBtn.addEventListener('click', (e) => {
+      if (mobileBtn.classList.contains('off')) {
+        mobileBtn.classList.replace('off', 'on');
+        mobileNav.style.display = 'block';
+        setTimeout(() => {
+          mobileNav.classList.replace('off', 'on');
+        }, 100);
+        eleHtml.classList.remove('menuOpen');
+        eleHtml.classList.add('menuOn');
+      } else {
+        mobileBtn.classList.replace('on', 'off');
+        mobileNav.classList.replace('on', 'off');
+        setTimeout(() => {
+          mobileNav.style.display = 'none';
+        }, 700);
+        eleHtml.classList.remove('menuOn');
+        eleHtml.classList.add('menuOff');
+      }
+    });
+
+    mobileflexwrap.addEventListener('click', (e) => {
+      if (e.target.classList.contains('mobile-btn')) {
+        mobileBtn.classList.replace('on', 'off');
+        mobileNav.classList.replace('on', 'off');
+        setTimeout(() => {
+          mobileNav.style.display = 'none';
+        }, 700);
+        eleHtml.classList.remove('menuOn');
+        eleHtml.classList.add('menuOff');
+      }
+    });
+  }
 });

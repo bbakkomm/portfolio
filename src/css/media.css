@@ -105,6 +105,12 @@
 } 
 
 @media (max-width: 1023px) { 
+  .nav-Btn {
+    font-size: 1.6rem;
+  }
+  .header-Icon {
+    max-width: 15rem;
+  }
   .mobile_section-title {
     font-size: 11rem;
   }
@@ -135,9 +141,10 @@
   }
   .anchor-wBtn {
     font-size: 1.5rem;
+    gap: 0 0.7rem;
   }
   .anchor-wBtn svg {
-    max-width: 2.5rem;
+    max-width: 1.2rem;
   }
 
   .main-cube-item {
@@ -222,9 +229,31 @@
 }
 
 @media (max-width: 767px) { 
-  .main-cube-wrapper {
+  .header-Info {
     display: none;
   }
+  .global-Header {
+    padding: 0 1rem;
+  }
+  .section-main {
+    padding: 0 1rem;
+  }
+  .mobilemenu-btn {
+    display: flex;
+  }
+  .global-HeaderNav.global-hd-li {
+    display: none;
+  }
+  .global-headerWrap {
+    padding: 1rem 0 1rem 0;
+  }
+  .header-Icon {
+    max-width: 12rem;
+  }
+  .main-cube-item.citem-1 { bottom: 26rem;}
+  .main-cube-item.citem-2 { bottom: -10rem;}
+  .main-cube-item.citem-3 { right: -1rem;}
+  .main-cube-item.citem-4 { bottom: -9rem;}
   .main-contents-bigtxt {
     font-size: 3.5rem;
   }
@@ -239,6 +268,7 @@
   }
   .mobile_section-title {
     font-size: 6rem;
+    transform: translate3d(-50%, -50%, 0px)!important;
   }
   .achieved-contents-smalltxt {
     font-size: 2rem;
@@ -246,8 +276,11 @@
   .achieved-inner-wrap.trust-sec {
     padding: 7rem 0;
   }
+  .brand-logo-list {
+    gap: 1rem 1.5rem;
+  }
   .brand-logo-item img {
-    max-width: 11rem;
+    max-width: 9rem;
   }
   .achieved-inner-wrap.footachieved-sec {
     padding: 2rem 2rem;
@@ -263,8 +296,10 @@
     font-size: 4rem;
   }
   .experience-hboxContentsTxt {
-    font-size: 2.0rem;
-    line-height: 1.25;
+    font-size: 1.7rem;
+  }
+  .experience-hbox.hbox-right {
+    gap: 1rem;
   }
   .experience-section {
     padding: 5rem 0 5rem 0;
