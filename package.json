@@ -2,7 +2,6 @@
   "name": "basic",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sunghun-pf.netlify.app/",
   "dependencies": {
     "@tanstack/react-query": "^4.29.5",
     "@tanstack/react-query-devtools": "^4.29.6",
